@@ -17,6 +17,7 @@
     --background-color: #FF8DCB;
     --backgroud-image: url('../images/cover-image-light.png');
   }
+
   .header__rec {
     display: none;
   }

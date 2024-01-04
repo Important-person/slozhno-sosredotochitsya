@@ -1,4 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .header {
   block-size: 100vh;
   display: grid;
@@ -7,6 +6,7 @@
   padding-block: var(--container-indent);
   position: relative;
 }
+
 .decorated-zone:after {
   content: " ";
   display: inline-block;
@@ -18,6 +18,7 @@
   border-bottom: 1px solid var(--title-text-color);
   border-left: 1px solid var(--title-text-color);
 }
+
 .decorated-zone:before {
   content: " ";
   display: inline-block;
@@ -29,6 +30,7 @@
   border-top: 1px solid var(--title-text-color);
   border-right: 1px solid var(--title-text-color);
 }
+
 .header__rec {
   position: absolute;
   display: var(--display-rec);
@@ -39,7 +41,8 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  }
+}
+
 .header__rec::after {
   content: " ";
   display: inline-block;
@@ -49,18 +52,22 @@
   border-radius: 50%;
   filter: drop-shadow(0px 0px 4px #FF0070);
 }
+
 .header__title-rec {
   display: inline-block;
 }
+
 .header__theme-menu {
   justify-self: end;
   align-self: center;
 }
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .header__theme-menu-item {
   color: var(--title-text-color);
   text-align: center;
@@ -69,25 +76,31 @@
   font-weight: 400;
   line-height: 18px;
 }
+
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
   padding-inline: 13px;
   text-transform: lowercase;
 }
+
 .header__theme-menu-button:hover {
   outline: 1px solid var(--title-text-color);
 }
+
 .header__theme-menu-button:focus {
   outline: none;
 }
+
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--title-text-color);
 }
+
 .header__theme-menu-button_active {
   outline: 1px solid var(--title-text-color);
   pointer-events: none;
 }
+
 .header__title {
   justify-self: start;
   align-self: center;
@@ -99,6 +112,7 @@
   font-weight: 700;
   line-height: 82.5%;
 }
+
 .header__text {
   inline-size: max(355px, 48%);
   justify-self: end;
@@ -110,27 +124,32 @@
   font-weight: 700;
   line-height: 23.4px;
 }
+
 .title-decor {
   background-color: var(--background-color);
 }
-@media (width >= 768px) {
+
+@media (width >=768px) {
   .header {
     --container-indent: 20px;
   }
+
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
   }
+
   .header__theme-menu-list {
     flex-direction: row;
     gap: 10px;
   }
+
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -145,11 +164,13 @@
   gap: 50px;
   margin-bottom: 40px;
 }
+
 .content__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
 .content__title {
   grid-column: 1 / 4;
   color: var(--title-text-color);
@@ -160,17 +181,20 @@
   justify-self: start;
   align-self: start;
 }
+
 .content__list {
   grid-column: 1 / 4;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .content__section {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .content__headline-text {
   grid-column: 1 / 4;
   color: var(--title-color);
@@ -178,7 +202,8 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
-  }
+}
+
 .content__text {
   color: var(--text-color);
   font-family: var(--font-family);
@@ -187,17 +212,21 @@
   font-weight: 400;
   line-height: 23.4px;
 }
+
 .content__headline-text_bold {
   margin-bottom: 10px;
 }
+
 .content__headline-text_thin {
   font-weight: 400;
 }
+
 .content__grid-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
 .content__img {
   max-width: 100%;
   min-height: 100%;
@@ -206,76 +235,95 @@
   object-position: center;
   object-fit: cover;
 }
+
 .content__reference {
   quotes: none;
   text-shadow: 2px 2px 0px var(--background-color);
   cursor: pointer;
   text-decoration: none;
 }
+
 .content__reference:hover {
   text-decoration: underline;
   text-decoration-color: var(--text-color);
 }
+
 .content__reference:focus {
   outline: none;
 }
+
 .content__reference:focus-visible {
   outline: 1px solid var(--text-color);
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .content {
     --container-indent: 20px;
     gap: 80px;
     margin-bottom: 60px;
   }
+
   .content__title_concentration {
     grid-column: 1 / 2;
   }
-  .content__list_concentration{
+
+  .content__list_concentration {
     grid-column: 2 / 4;
   }
+
   .content__title_question {
     grid-column: 1 / 1;
   }
+
   .content__title_answer {
     grid-column: 1 / 1;
   }
+
   .content__grid-card {
     gap: 20px;
   }
+
   .content__list_answer {
     grid-column: 2 / 4;
   }
+
   .content__img-sanset {
     grid-column: 1 / 3;
   }
+
   .content__img-icecream {
     grid-column: 3 / 4;
     grid-row: 2 / 4;
   }
+
   .content__img-tape {
     grid-column: 1 / 2;
     grid-row: 3 / 5;
   }
+
   .content__img-books {
     grid-column: 2 / 3;
   }
+
   .content__img-street {
     grid-column: 2 / 4;
   }
 }
-@media (width >= 1024px) {
+
+@media (width >=1024px) {
   .content__title_question {
     grid-column: 1 / 1;
   }
+
   .content__list_question {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .content__title_answer {
     grid-column: 1 / 1;
   }
+
   .content__list_answer {
     grid-column: 2 / 4;
   }
@@ -296,6 +344,7 @@
   align-items: center;
   position: relative;
 }
+
 .footer__title {
   color: var(--headline-color);
   text-shadow: 2px 2px 0px #FF0070;
@@ -304,7 +353,8 @@
   font-weight: 700;
   line-height: 82.5%;
 }
-@media (width >= 768px) {
+
+@media (width >=768px) {
   .footer {
     --container-indent: 20px;
   }
