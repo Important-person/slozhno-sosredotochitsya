@@ -37,7 +37,7 @@
   top: var(--container-indent);
   right: calc(var(--container-indent) + 9px);
   color: var(--background-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -46,11 +46,12 @@
 .header__rec::after {
   content: " ";
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  text-align: center;
+  width: 12px;
+  height: 12px;
   background-color: #FF0070;
   border-radius: 50%;
-  filter: drop-shadow(0px 0px 4px #FF0070);
+  box-shadow: 0px 0px 5px 1px #FF0070;
 }
 
 .header__title-rec {
@@ -71,7 +72,7 @@
 .header__theme-menu-item {
   color: var(--title-text-color);
   text-align: center;
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -150,10 +151,6 @@
     flex-direction: row;
     gap: 10px;
   }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 }
 
 
@@ -174,7 +171,7 @@
 .content__title {
   grid-column: 1 / 4;
   color: var(--title-text-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -198,15 +195,16 @@
 .content__headline-text {
   grid-column: 1 / 4;
   color: var(--title-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-size: 18px;
+  font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
 }
 
 .content__text {
   color: var(--text-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -348,8 +346,8 @@
 .footer__title {
   color: var(--headline-color);
   text-shadow: 2px 2px 0px #FF0070;
-  font-family: var(--font-family);
-  font-size: 120px;
+  font-family: var(--font-family), sans-serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
 }
@@ -357,6 +355,9 @@
 @media (width >=768px) {
   .footer {
     --container-indent: 20px;
+  }
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
