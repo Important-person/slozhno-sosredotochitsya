@@ -115,7 +115,7 @@
 }
 
 .header__text {
-  inline-size: max(355px, 48%);
+  inline-size: max(355px, 50%);
   justify-self: end;
   align-self: center;
   color: var(--title-color);
@@ -356,6 +356,7 @@
   .footer {
     --container-indent: 20px;
   }
+
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
