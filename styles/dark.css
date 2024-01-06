@@ -3,6 +3,7 @@
   --headline-color: #DB00FF;
   --text-color: rgba(241, 178, 206, 1);
   --background-color: rgba(255, 0, 112, 1);
+  --title-text-color: #FF0070;
   --backgroud-image: url('../images/cover-image-dark.png');
-  --display-rec: block;
+  --condition-rec: block;
 }

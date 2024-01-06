@@ -4,6 +4,9 @@
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
   padding-inline: var(--container-indent);
   padding-block: var(--container-indent);
+}
+
+.decorated-zone {
   position: relative;
 }
 
@@ -33,7 +36,7 @@
 
 .header__rec {
   position: absolute;
-  display: var(--display-rec);
+  display: var(--condition-rec);
   top: var(--container-indent);
   right: calc(var(--container-indent) + 9px);
   color: var(--background-color);
@@ -66,7 +69,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 13px;
 }
 
 .header__theme-menu-item {
@@ -82,6 +85,7 @@
   background-color: transparent;
   border: none;
   padding-inline: 13px;
+  padding-block: 2.5px;
   text-transform: lowercase;
 }
 
