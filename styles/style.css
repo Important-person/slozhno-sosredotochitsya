@@ -90,7 +90,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--title-text-color);
+  outline: 1px solid var(--border-hover);
 }
 
 .header__theme-menu-button:focus {

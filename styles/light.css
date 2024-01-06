@@ -4,6 +4,7 @@
   --title-text-color: #353430;
   --text-color: #353430;
   --background-color: #FF8DCB;
+  --border-hover: rgba(50, 49, 45, 0.40);
   --backgroud-image: url('../images/cover-image-light.png');
   --condition-rec: none;
 }
@@ -15,6 +16,7 @@
     --title-text-color: #353430;
     --text-color: #353430;
     --background-color: #FF8DCB;
+    --border-hover: rgba(50, 49, 45, 0.40);
     --backgroud-image: url('../images/cover-image-light.png');
     --condition-rec: none;
   }
